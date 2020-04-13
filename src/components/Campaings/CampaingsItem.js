@@ -18,7 +18,7 @@ class CampaingsItem extends Component {
 
     componentDidMount(){
         const {featured_media} = this.props.campaign
-        const getImageUrl = axios.get(`testsite/wp-json/wp/v2/media/${featured_media}`);
+        const getImageUrl = axios.get(`https://wp-api-beyondx.000webhostapp.com/wp-json/wp/v2/media/${featured_media}`);
 
         Promise.all([getImageUrl]).then(res=>{
             this.setState({

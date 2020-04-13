@@ -13,7 +13,7 @@ class CampaingsPage extends Component {
     }
 
     componentDidMount(){
-        axios.get(`http://192.168.1.8/testsite/wp-json/wp/v2/campaigns/${this.props.id}`)
+        axios.get(`https://wp-api-beyondx.000webhostapp.com/wp-json/wp/v2/campaings/${this.props.id}`)
         .then(res=> this.setState({
             campaign: res.data,
             isLoaded: true

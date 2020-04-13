@@ -13,7 +13,7 @@ class CampaingsListPage extends Component {
 
     componentDidMount(){
         this.setState( { loading:true }, ()=>{
-            axios.get(`testsite/wp-json/wp/v2/campaigns`)
+            axios.get(`https://wp-api-beyondx.000webhostapp.com/wp-json/wp/v2/campaings`)
                 .then(res=>{
                     this.setState({
                         loading:true,
@@ -49,9 +49,7 @@ class CampaingsListPage extends Component {
                         <div className="main-section">
                             <h1>Campaings</h1>
                         {campaigns.length ?campaigns.map(campaign=>(
-                            <div>
                 <CampaingsItem key={campaign.id} campaign={campaign}/>
-                            </div>
                             )):'Loading'
                         }
                         </div>
