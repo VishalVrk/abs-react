@@ -14,7 +14,7 @@ class NewsPage extends Component {
     }
 
     componentDidMount(){
-        axios.get(`https://wp-api-beyondx.000webhostapp.com/wp-json/wp/v2/news/${this.props.id}`)
+        axios.get(`https://wp-api-beyondx.000webhostapp.com/wp-json/wp/v2/news/${this.props.match.params.id}`)
         .then(res=> this.setState({
             news: res.data,
             isLoaded: true
