@@ -14,9 +14,8 @@ class Campaings extends Component {
 
 
     componentDidMount(){
-        const wordPressSiteUrl = 'http://localhost/testsite';
         this.setState( { loading:true }, ()=>{
-            axios.get(`${wordPressSiteUrl}/wp-json/wp/v2/campaigns`)
+            axios.get(`testsite/wp-json/wp/v2/campaigns`)
                 .then(res=>{
                     this.setState({
                         loading:true,
