@@ -1,13 +1,19 @@
-footer {
+.footer {
     background:rgb(0, 31, 68);
-    padding: 20px;
+    padding: 2em;
+    padding-bottom:0 ;
     text-align: left;
     font-family:Calibri ;
     font-size:15px;
     color: white;
     text-indent:20px;
     width: auto;
-    height: 150px;
+    position: relative;
+    overflow: hidden;
+    left:0;
+  bottom:0;
+  right:0;
+  height:150px;
   }
   
   .column {
@@ -46,13 +52,13 @@ footer {
       text-decoration: underline;
     }
 
-  .footer-heading{
+  .footer h1{
     text-indent:60px;
     font-size:10px ;
      margin-top:25px;
   }
 
-  div.footer-heading a{
+  div.footer h1 a{
     color:white;
     font-size:20px; 
     font-family:arial ;

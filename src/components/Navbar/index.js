@@ -2,7 +2,7 @@ import React,{Component, Fragment} from 'react'
 import './styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import {Link} from '@reach/router';
+import {Link} from 'react-router-dom';
 
 class Navbar extends Component {
     state={
