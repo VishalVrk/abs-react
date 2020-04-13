@@ -57,7 +57,7 @@ class NewsPage extends Component {
                     </section>
                 </div>
                     </div>
-                </div>
+                </div> 
             )   
         }
 
