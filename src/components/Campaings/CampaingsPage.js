@@ -3,13 +3,15 @@ import axios from 'axios';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbsUp , faPhone } from '@fortawesome/free-solid-svg-icons'
+import PageImage from '../PageImage';
 
 
 class CampaingsPage extends Component {
   
     state={
         campaign:{},
-        isLoaded: false
+        isLoaded: false,
+        imgUrl:'',
     }
 
     componentDidMount(){
@@ -19,11 +21,12 @@ class CampaingsPage extends Component {
             isLoaded: true
         }))
         .catch(err=>console.log(err))
+        console.log(this.state.campaign);
     }
 
     render() {
-        const {campaign , isLoaded} = this.state;
-        console.log(campaign)
+        const {campaign , isLoaded, imgUrl} = this.state;
+        console.log(campaign.featured_media);
         if(isLoaded){
             return (
                 <div className='container'>
@@ -31,10 +34,10 @@ class CampaingsPage extends Component {
                     <div className="first-row">
                         <section className="my-weekly-ds-times">
                         <div className="side-card">
-                            <img src="https://user-images.githubusercontent.com/44617366/79054695-9fee7480-7c64-11ea-8ebf-14ac5d64db50.jpg" width="100%"/>
 							<p>"Rishi has proved to be a diligent constituency MP and it was no surprise to see him re-elected with an increased majority in 2017.
                             "He is an exceptional individual and I believe he will continue to be a strong and effective advocate for our community"
                             Lord William Hague of Richmond</p>
+                            <PageImage img={campaign}/>
                         </div>
                     </section>
                     </div>
@@ -49,7 +52,7 @@ class CampaingsPage extends Component {
 							<button><FontAwesomeIcon icon={faPhone}/>tweet</button>
 							</div>
 							<div className="main-content">
-                            <img src="https://user-images.githubusercontent.com/44617366/79054695-9fee7480-7c64-11ea-8ebf-14ac5d64db50.jpg" width="100%"/>
+                            <PageImage img={campaign}/>
                             <p dangerouslySetInnerHTML={{__html:`${campaign.content.rendered}`}}></p>
 							</div>
                             
@@ -58,7 +61,7 @@ class CampaingsPage extends Component {
                 </div>
                     </div>
                 </div>
-            )   
+            ) 
         }
 
         return <img src="https://user-images.githubusercontent.com/2671660/27986068-7a0040d6-63f9-11e7-8e54-dcb220e42fd7.gif"/>

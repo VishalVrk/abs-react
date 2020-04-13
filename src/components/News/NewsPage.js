@@ -3,6 +3,7 @@ import axios from 'axios';
 import '../Campaings/style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbsUp , faPhone } from '@fortawesome/free-solid-svg-icons'
+import PageImage from '../PageImage';
 
 
 class NewsPage extends Component {
@@ -31,7 +32,7 @@ class NewsPage extends Component {
                     <div className="first-row">
                         <section className="my-weekly-ds-times">
                         <div className="side-card">
-                            <img src="https://user-images.githubusercontent.com/44617366/79054695-9fee7480-7c64-11ea-8ebf-14ac5d64db50.jpg" width="100%"/>
+                            <PageImage img={news}/>
 							<p>"Rishi has proved to be a diligent constituency MP and it was no surprise to see him re-elected with an increased majority in 2017.
                             "He is an exceptional individual and I believe he will continue to be a strong and effective advocate for our community"
                             Lord William Hague of Richmond</p>
@@ -49,7 +50,7 @@ class NewsPage extends Component {
 							<button><FontAwesomeIcon icon={faPhone}/>tweet</button>
 							</div>
 							<div className="main-content">
-                            <img src="https://user-images.githubusercontent.com/44617366/79054695-9fee7480-7c64-11ea-8ebf-14ac5d64db50.jpg" width="100%"/>
+                            <PageImage img={news}/>
                             <p dangerouslySetInnerHTML={{__html:`${news.content.rendered}`}}></p>
 							</div>
                         </div>
