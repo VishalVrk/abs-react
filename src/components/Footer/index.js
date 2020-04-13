@@ -4,9 +4,12 @@ import './style.css'
 class Footer extends Component{
     render(){
         return (
-             <div className="footer" style={{paddingBottom:"60px"}}>
-                 <h1><a> World humanitarian drive main index page link</a></h1>   
-
+                <footer>
+               <div className="footer-heading">
+                    <a>
+                         World humanitarian drive main index page link
+                    </a>
+               </div>
                <div className="column" style={{textAlign:'right'}}>  
               <br/>Promoted by Sam Gibbs on behalf of Rishi Sunak MP, both at Uni
              </div>
@@ -25,8 +28,12 @@ class Footer extends Component{
                           <li><a href="#">link6</a></li>
                      </ul> 
                   </div>
-         </div>
+                  <div className="leftcolumn">
+                  <div className="leftcolumn">
+                  </div>
              </div>
+         </div>
+           </footer>
         )
     }
    

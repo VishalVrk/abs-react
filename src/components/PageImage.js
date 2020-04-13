@@ -9,7 +9,7 @@ class PageImage extends Component {
     }
 
     static propTypes ={
-        img: PropTypes.object.isRequired
+        campaign: PropTypes.object.isRequired
     }
 
     componentDidMount(){
