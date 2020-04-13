@@ -37,7 +37,7 @@ class News extends Component {
             <section>
             <div className="campaings">
                 <h1>News</h1>
-                {newsList.length==3 ?
+                {newsList.length===3 ?
                newsList.map(news=>(
                <NewsItem key={news.id} news={news}/>
                             )): <img src="https://user-images.githubusercontent.com/2671660/27986068-7a0040d6-63f9-11e7-8e54-dcb220e42fd7.gif"/>
