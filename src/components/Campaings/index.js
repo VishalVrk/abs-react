@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './style.css'
 import axios from 'axios';
 import CampaingsItem from "./CampaingsItem";
-import {Link} from '@reach/router';
+import {Link} from 'react-router-dom';
 
 
 class Campaings extends Component {
