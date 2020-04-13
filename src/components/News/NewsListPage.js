@@ -11,9 +11,8 @@ class NewsListPage extends Component {
     }
 
     componentDidMount(){
-        const wordPressSiteUrl = 'http://localhost/testsite';
         this.setState( { loading:true }, ()=>{
-            axios.get(`${wordPressSiteUrl}/wp-json/wp/v2/news`)
+            axios.get(`testsite/wp-json/wp/v2/news`)
                 .then(res=>{
                     this.setState({
                         loading:true,
