@@ -9,7 +9,7 @@ class HomeLayout extends Component {
     render() {
 
         return (
-            <div className="container">
+            <div className="container"> 
                     <Gallery/>
                 <div className="wrapper">
                     <div>

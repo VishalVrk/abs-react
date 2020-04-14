@@ -11,7 +11,7 @@ class Campaings extends Component {
         campaigns:[],
         error:'',
     }
-
+ 
 
     componentDidMount(){
         this.setState( { loading:true }, ()=>{

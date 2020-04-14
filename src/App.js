@@ -21,7 +21,7 @@ class App extends Component{
         <Route path="/news" exact component ={NewsListPage} />
         <Footer/>
       </Router>
-    )
+    ) 
   }
 }
 

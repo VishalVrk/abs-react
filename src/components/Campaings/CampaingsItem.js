@@ -53,5 +53,5 @@ class CampaingsItem extends Component {
         return <img src="https://user-images.githubusercontent.com/2671660/27986068-7a0040d6-63f9-11e7-8e54-dcb220e42fd7.gif"/>
         
     }
-}
+} 
 export default CampaingsItem;

@@ -19,7 +19,7 @@ class CampaingsListPage extends Component {
                         loading:true,
                         campaigns: res.data,
                     })
-                    
+                     
                 })  
                 .catch(error=> this.setState({
                     loading:false,

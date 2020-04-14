@@ -54,7 +54,7 @@ class NewsPage extends Component {
                             <p dangerouslySetInnerHTML={{__html:`${news.content.rendered}`}}></p>
 							</div>
                         </div>
-                    </section>
+                    </section> 
                 </div>
                     </div>
                 </div> 

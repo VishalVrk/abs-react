@@ -18,7 +18,7 @@ class NewsListPage extends Component {
                         loading:true,
                         news: res.data,
                     })
-                    
+                     
                 })  
                 .catch(error=> this.setState({
                     loading:false,

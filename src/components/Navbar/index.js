@@ -7,13 +7,13 @@ import {Link} from 'react-router-dom';
 class Navbar extends Component {
     state={
         toggle:false,
-    }
+    } 
 
     render(){
         console.log(this.state.toggle);
         return (
             <Fragment>
-            <div className="parallax">
+            <div className="parallax"> 
             </div>
             <nav>
             <div className="toggle">

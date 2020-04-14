@@ -22,7 +22,7 @@ class CampaingsPage extends Component {
         }))
         .catch(err=>console.log(err))
         console.log(this.state.campaign);
-    }
+    } 
 
     render() {
         const {campaign , isLoaded, imgUrl} = this.state;

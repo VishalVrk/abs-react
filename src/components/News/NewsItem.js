@@ -14,7 +14,7 @@ class NewsItem extends Component {
 
     static propTypes ={
         campaign: PropTypes.object.isRequired
-    }
+    } 
 
     componentDidMount(){
         const {featured_media} = this.props.news
