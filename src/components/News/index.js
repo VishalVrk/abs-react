@@ -30,7 +30,6 @@ class News extends Component {
 
     render() {
         const {newsList} = this.state;
-        console.log(newsList)
         newsList.length=3;
         return (
          

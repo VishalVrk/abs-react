@@ -10,7 +10,6 @@ class Navbar extends Component {
     } 
 
     render(){
-        console.log(this.state.toggle);
         return (
             <Fragment>
             <div className="parallax"> 

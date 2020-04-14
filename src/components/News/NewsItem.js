@@ -13,7 +13,7 @@ class NewsItem extends Component {
     }
 
     static propTypes ={
-        campaign: PropTypes.object.isRequired
+        news: PropTypes.object.isRequired
     } 
 
     componentDidMount(){
@@ -32,7 +32,6 @@ class NewsItem extends Component {
     render() {
         const {id,title,content} = this.props.news;
         const {imgUrl, isLoaded} = this.state;
-        console.log(imgUrl)
         if(isLoaded){
             return (
                 <div>

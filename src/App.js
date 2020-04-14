@@ -7,6 +7,8 @@ import CampaingsPage from './components/Campaings/CampaingsPage';
 import CampaingsListPage from './components/Campaings/CampaingsListPage';
 import NewsPage from './components/News/NewsPage';
 import NewsListPage from './components/News/NewsListPage';
+import SpeechListPage from './components/ParlimentSpeech/SpeechListPage';
+import SpeechPage from './components/ParlimentSpeech/SpeechPage';
 
 
 class App extends Component{
@@ -19,6 +21,8 @@ class App extends Component{
         <Route path="/campaigns" exact component ={CampaingsListPage} />
         <Route path="/news/:id" exact component ={NewsPage} />
         <Route path="/news" exact component ={NewsListPage} />
+        <Route path="/speeches" exact component ={SpeechListPage} />
+        <Route path="/speeches/:id" exact component ={SpeechPage} />
         <Footer/>
       </Router>
     ) 

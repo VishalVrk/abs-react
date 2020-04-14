@@ -33,7 +33,6 @@ class Campaings extends Component {
 
     render() {
         const {campaigns} = this.state;
-        console.log(campaigns)
         campaigns.length=3;
         return (
             <section>

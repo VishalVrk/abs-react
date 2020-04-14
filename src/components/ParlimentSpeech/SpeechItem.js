@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
-import './style.css'
+import '../Campaings/style.css'
 
-
-class CampaingsItem extends Component {
+class SpeechItem extends Component {
 
     state={
         imgUrl:'',
@@ -13,11 +12,11 @@ class CampaingsItem extends Component {
     }
 
     static propTypes ={
-        campaign: PropTypes.object.isRequired
+        name: PropTypes.object.isRequired
     }
 
     componentDidMount(){
-        const {featured_media} = this.props.campaign
+        const {featured_media} = this.props.name
         const getImageUrl = axios.get(`https://wp-api-beyondx.000webhostapp.com/wp-json/wp/v2/media/${featured_media}`);
 
         Promise.all([getImageUrl]).then(res=>{
@@ -30,7 +29,7 @@ class CampaingsItem extends Component {
     }
 
     render() {
-        const {id,title,content} = this.props.campaign;
+        const {id,title,content} = this.props.name;
         const {imgUrl, isLoaded} = this.state;
         if(isLoaded){
             return (
@@ -42,7 +41,7 @@ class CampaingsItem extends Component {
                         <div>
                         <strong>{title.rendered}</strong>
                     <p dangerouslySetInnerHTML={{__html:`${content.rendered.slice(0,100)}...`}}></p>
-                    <Link to={`/campaigns/${id}`}>read more</Link>
+                    <Link to={`/speeches/${id}`}>read more</Link>
                         </div>
                         </div>
                 </div>
@@ -53,4 +52,4 @@ class CampaingsItem extends Component {
         
     }
 } 
-export default CampaingsItem;
+export default SpeechItem;
