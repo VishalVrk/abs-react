@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './style.css'
-import PageImage from '../PageImage'
+import PageImage from '../utlis/PageImage'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
 

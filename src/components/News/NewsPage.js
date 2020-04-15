@@ -3,7 +3,7 @@ import axios from 'axios';
 import '../Campaings/style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbsUp , faPhone } from '@fortawesome/free-solid-svg-icons'
-import PageImage from '../PageImage';
+import PageImage from '../utlis/PageImage';
 
 
 class NewsPage extends Component {

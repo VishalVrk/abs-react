@@ -4,8 +4,8 @@ import Gallery from '../Gallery';
 import Campaings from '../Campaings';
 import News from '../News';
 import ParlimentSpeech from '../ParlimentSpeech'
-import Twitter from '../twitter'
-import Facebook from '../Facebook'
+import Twitter from '../utlis/twitter'
+import Facebook from '../utlis/Facebook'
 
 
 class HomeLayout extends Component {
