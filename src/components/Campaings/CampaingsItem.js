@@ -36,14 +36,21 @@ class CampaingsItem extends Component {
             return (
                 <div>
                     <div className="content-wrapper" >
-                            <div>   
+                            {/* <div>   
                             {<img style={{width:"100%", padding:'0'}}src={imgUrl}/>}
                             </div>
                         <div>
                         <strong>{title.rendered}</strong>
                     <p dangerouslySetInnerHTML={{__html:`${content.rendered.slice(0,100)}...`}}></p>
                     <Link to={`/campaigns/${id}`}>read more</Link>
+                        </div> */} 
+
+
+
+
                         </div>
+                        <div class="frame-video">
+                            <iframe width="720px" height="420px" src="https://www.youtube.com/embed/AT51NJOfxh4?autoplay=1" frameborder="0" allowfullscreen></iframe>
                         </div>
                 </div>
             )

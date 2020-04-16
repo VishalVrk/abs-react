@@ -26,9 +26,11 @@ class Gallery extends Component {
                             })
                         }} className="active"><a className="active" href="#">Home</a></li>
                         <li className="two"><a href="#">About</a></li>
-                        <li className="three"><a href="#">Services</a></li>
+                        <li className="three"><a href="/campaigns">Campaings</a></li>
                         <li className="four"><a href="#">Portfolio</a></li>
                         <li className="five"><a href="#">Contact</a></li>
+                        <li className="five"><a href="/weekly_ds">Weekly D&S</a></li>
+                        <li className="five"><a href="/in_media">Media</a></li>
                     </ul> 
                    </div>
                 </div>

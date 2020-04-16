@@ -55,14 +55,27 @@ div.campaings h1{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-div.side-card p{
+span {
+    font-weight:600;
+}
+/* div.side-card p{
     font-weight:bold; 
     font-family:sans-serif; 
     font-size:13px; 
     color:#1A4252;
+} */
+.frame-video {
+    text-align: center;
 }
 
+.para-footer{
+    float:right;
+    padding-right: 14px;
+    font-weight: 700;
+}
+.para-footer1{
+    text-align: justify;
+}
 .secound-row{
     position: relative;
     margin-bottom: 2em;
