@@ -13,16 +13,16 @@ class Footer extends Component{
              <div className="column" >
                   <div className="leftcolumn" >
                      <ul>
-                          <li><a href="#">link1</a></li>
-                          <li><a href="#">link2</a></li>
-                          <li><a href="#">link3</a></li>
-                          <li><a href="#">link4</a></li>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#/campaigns">Campaings</a></li>
+                          <li><a href="#">Portfolio</a></li>
                     </ul>  
                   </div>
                   <div className="leftcolumn" >
                      <ul>
-                          <li><a href="#">link5</a></li>
-                          <li><a href="#">link6</a></li>
+                          <li><a href="#/weekly_ds">Weekly D&S</a></li>
+                          <li><a href="#/in_media">Media</a></li>
                      </ul> 
                   </div>
          </div>

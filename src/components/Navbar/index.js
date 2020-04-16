@@ -28,6 +28,8 @@ class Navbar extends Component {
                 <li>About</li>
                 <Link to='/campaigns'><li>Campaings</li></Link>
                 <li>Portfolio</li>
+                <Link to='/in_media'><li>Media</li></Link>
+                <Link to='/weekly_ds'><li>Weekly D&S</li></Link>
             </ul>
         </nav>
             </Fragment>
