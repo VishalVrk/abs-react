@@ -13,6 +13,7 @@ import MediaListPage from './components/InMedia/MediaListPage'
 import MediaPage from './components/InMedia/MediaPage'
 import WeeklyListPage from './components/WeeklyColumn/WeeklyListPage'
 import WeeklyPage from './components/WeeklyColumn/WeeklyPage'
+import MediaGallery from './components/MediaGallery'
 
 
 class App extends Component{
@@ -31,6 +32,8 @@ class App extends Component{
         <Route path="/in_media/:id" exact component ={MediaPage} />
         <Route path="/weekly_ds" exact component ={WeeklyListPage} />
         <Route path="/weekly_ds/:id" exact component ={WeeklyPage} />
+        <Route path="/weekly_ds/:id" exact component ={WeeklyPage} />
+        <Route path="/gallery" exact component ={MediaGallery} />
         <Footer/>
       </Router>
     ) 

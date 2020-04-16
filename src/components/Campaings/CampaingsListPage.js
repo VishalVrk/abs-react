@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import CampaingsItem from './CampaingsItem';
 import axios from 'axios';
-import img from './cam_img.jpg';
+// import img from './cam_img.jpg';
 
 class CampaingsListPage extends Component {
 
@@ -39,7 +39,7 @@ class CampaingsListPage extends Component {
                   <section className="my-weekly-ds-times">
                         <div className="side-card">
                         {/*Img Src-> https://user-images.githubusercontent.com/42794655/79435107-e2111080-7fec-11ea-8301-f44c972e8396.gif */}
-                            <img src={img} width="100%"/>
+                            <img src="https://user-images.githubusercontent.com/42794655/79435107-e2111080-7fec-11ea-8301-f44c972e8396.gif" width="100%"/>
 							<p>
                                 <blockquote>
 ‘‘Not all of us can do great things. But we can do small things with great love.’’</blockquote> &nbsp;<div class="para-footer"><footer>– Mother Teresa</footer></div>

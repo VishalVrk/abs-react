@@ -44,13 +44,9 @@ class CampaingsItem extends Component {
                     <p dangerouslySetInnerHTML={{__html:`${content.rendered.slice(0,100)}...`}}></p>
                     <Link to={`/campaigns/${id}`}>read more</Link>
                         </div> */} 
-
-
-
-
                         </div>
                         <div class="frame-video">
-                            <iframe width="720px" height="420px" src="https://www.youtube.com/embed/AT51NJOfxh4?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="100%" height="420px" src="https://www.youtube.com/embed/AT51NJOfxh4?autoplay=1" frameborder="0" allowfullscreen></iframe>
                         </div>
                 </div>
             )
