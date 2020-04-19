@@ -13,6 +13,27 @@ nav{
     background: #00334e;
 }
 
+.hero-name{
+    display: grid;
+    grid-template-columns: auto;
+    overflow: hidden;
+}
+
+.Name{
+    color:#eee;
+    font-size: 40px;
+    padding-top:3.665em ;
+    overflow: hidden;
+}
+
+.Name span{
+    background-color:#00334e ;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+
 nav ul{
     width: 80%;
     margin: 0 auto;

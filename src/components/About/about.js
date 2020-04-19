@@ -1,6 +1,48 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React, {Component} from 'react';
 import './style.css';
+import renderHTML from 'react-render-html'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbsUp , faPhone } from '@fortawesome/free-solid-svg-icons'
 import PageImage from '../utlis/PageImage';
+import './style.css'
+
+
+ const About=(props)=> {
+    console.log(props.loaded)
+    console.log(props.data)
+    try {
+        if(props.loaded){
+            return (
+                <div>
+                  <div>
+                     <h1>{renderHTML(props.data.title.rendered)}
+                        </h1>
+                         <div className="share-buttons">
+                             <button><FontAwesomeIcon icon={faThumbsUp}/>like</button>
+                                 <button>share</button>
+                                     <button><FontAwesomeIcon icon={faPhone}/>tweet</button>
+                         </div>
+                         <div className="main">
+                                <PageImage img={props.data}/>
+                        <div className="about-content">
+                                 {renderHTML(props.data.content.rendered)}
+                        </div>
+                                 </div>
+                                
+                           </div>
+                </div>
+            )
+
+        }
+        else{
+            return <p>Loading..</p>
+        }
+        
+    } catch (error) {
+    return <p>Hello</p>
+    }
+}
+   
+  
+export default About;
+

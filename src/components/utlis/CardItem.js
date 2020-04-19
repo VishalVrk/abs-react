@@ -2,21 +2,20 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
-import '../Campaings/style.css'
+import './style.css'
 
-class SpeechItem extends Component {
-
+class CardItem extends Component {
     state={
         imgUrl:'',
         isLoaded:false
     }
 
     static propTypes ={
-        name: PropTypes.object.isRequired
+        data: PropTypes.object.isRequired
     }
 
     componentDidMount(){
-        const {featured_media} = this.props.name
+        const {featured_media} = this.props.data
         const getImageUrl = axios.get(`https://wp-api-beyondx.000webhostapp.com/wp-json/wp/v2/media/${featured_media}`);
 
         Promise.all([getImageUrl]).then(res=>{
@@ -25,11 +24,19 @@ class SpeechItem extends Component {
                 isLoaded:true
             })
         })
-        .catch(err=>console.log(err))
+        .catch((err)=>{console.log(err)
+            this.setState({
+                imgUrl:"https://user-images.githubusercontent.com/44617366/79681545-c69a4580-8238-11ea-966b-9e564a1677b9.jpg",
+                isLoaded:true
+            })
+        
+        }
+        
+        )
     }
 
     render() {
-        const {id,title,content} = this.props.name;
+        const {id,title,content} = this.props.data;
         const {imgUrl, isLoaded} = this.state;
         if(isLoaded){
             return (
@@ -41,8 +48,8 @@ class SpeechItem extends Component {
                         <div>
                         <strong>{title.rendered}</strong>
                     <p dangerouslySetInnerHTML={{__html:`${content.rendered.slice(0,100)}...`}}></p>
-                    <Link to={`/speeches/${id}`}>read more</Link>
-                        </div>
+                    <Link to={`/${this.props.name}/${id}`}>read more</Link>
+                        </div> 
                         </div>
                 </div>
             )
@@ -51,5 +58,5 @@ class SpeechItem extends Component {
         return <img src="https://user-images.githubusercontent.com/2671660/27986068-7a0040d6-63f9-11e7-8e54-dcb220e42fd7.gif"/>
         
     }
-} 
-export default SpeechItem;
+}
+export default CardItem;

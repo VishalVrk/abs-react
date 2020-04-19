@@ -62,42 +62,18 @@ class MediaGallery extends Component {
         console.log(index)
         // console.log(Images[index])
         return (
-            <div className='container'>
-            <div className="main-wrapper">
-            <div className="first-row">
-                <section className="my-weekly-ds-times">
-                <div className="side-card">
-                    <p>"Rishi has proved to be a diligent constituency MP and it was no surprise to see him re-elected with an increased majority in 2017.
-                    "He is an exceptional individual and I believe he will continue to be a strong and effective advocate for our community"
-                    Lord William Hague of Richmond</p>
-                </div>
-            </section>
-            </div>
-
-            <div className="secound-row">
-            <section className="my-weekly-ds-times">
-                <div className="main-section">
-                    <h1>Gallery</h1>
-                    <div className="share-buttons">
-                    <button><FontAwesomeIcon icon={faThumbsUp}/>like</button>
-                    <button>share</button>
-                    <button><FontAwesomeIcon icon={faPhone}/>tweet</button>
-                    </div>
-                    <div className="main-content">
-                        <div className="img-container">
-                        <div className="mySlides">
+        <div className="main-content">
+            <div className="img-container">
+                <div className="mySlides">
                             <img className="slide-img" src={Images[index]} width="100%" height="500px"/>
-                        </div>
-                        <div className="next" onClick={this.onClickBack}>❯</div>
-                        <div className="prev" onClick={this.onClickForward}>❮</div>
-
-                            <div style={{
-                                marginTop:"2em"
-                            }}>
-                            <div className="row">
-                                {Images.map((image,index)=>(
-                                     <div className="column" key={index}>
-                                     <img onClick={this.getSrc} className="slide-img" src={image}  width="95%" height="100px" index={index}/>
+                </div>
+                <div className="next" onClick={this.onClickBack}>❯</div>
+                <div className="prev" onClick={this.onClickForward}>❮</div>
+                <div style={{marginTop:"2em"}}>
+                 <div className="row">
+                    {Images.map((image,index)=>(
+                        <div className="column" key={index}>
+                            <img onClick={this.getSrc} className="slide-img" src={image}  width="95%" height="100px" index={index}/>
                                      <div><br/></div>
                                </div>
                                 )
@@ -108,12 +84,6 @@ class MediaGallery extends Component {
                         </div>
                         
                     </div>
-                    
-                </div>
-            </section>
-        </div>
-            </div>
-        </div>
         )
     }
 }

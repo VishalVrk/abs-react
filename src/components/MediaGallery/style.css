@@ -84,15 +84,12 @@ span {
 .secound-row{
     position: relative;
     margin-bottom: 2em;
-}
-
-.main-section{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
+
 .main-section h1{
-    background-color: white; 
     padding: 1em; 
     margin-top: 0em;
     margin-bottom: 0em; 
@@ -135,7 +132,7 @@ button {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 60%;
+  top: 22%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -148,7 +145,7 @@ button {
 }
 
 .next {
-  right: 10%;
+  right: 11%;
   border-radius: 3px 0 0 3px;
 }
 

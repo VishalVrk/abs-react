@@ -22,7 +22,14 @@ class PageImage extends Component {
                 isLoaded:true
             })
         })
-        .catch(err=>console.log(err))
+        .catch(err=>{
+            console.log(err);
+            this.setState({
+                imgUrl:"https://user-images.githubusercontent.com/44617366/79681545-c69a4580-8238-11ea-966b-9e564a1677b9.jpg",
+                isLoaded:true
+            })
+        }
+           )
     }
     render() {
         const {imgUrl} = this.state;

@@ -4,29 +4,37 @@ import './style.css'
 class Footer extends Component{
     render(){
         return (
-             <div className="footer" style={{paddingBottom:"60px"}}>
-                 <h1><a> World humanitarian drive main index page link</a></h1>   
-
-               <div className="column" style={{textAlign:'right'}}>  
-              <br/>Promoted by Sam Gibbs on behalf of Rishi Sunak MP, both at Uni
-             </div>
-             <div className="column" >
-                  <div className="leftcolumn" >
-                     <ul>
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">About</a></li>
-                          <li><a href="#/campaigns">Campaings</a></li>
-                          <li><a href="#">Portfolio</a></li>
+            <div className="footer-section">
+                 <h1><a> World humanitarian Drive</a></h1>   
+             <div className="footer">
+                 <div className="section-1">
+                 <ul>
+                          <li><a href="#/">Home</a></li>
+                          <li><a href="#/about">About Me</a></li>
+                          <li><a href="#/campaings">Campaings</a></li>
+                          <li><a href="#">Speeches</a></li>
                     </ul>  
-                  </div>
-                  <div className="leftcolumn" >
-                     <ul>
-                          <li><a href="#/weekly_ds">Weekly D&S</a></li>
-                          <li><a href="#/in_media">Media</a></li>
+                 </div>
+                 <div className="section-2">
+                    <ul>
+                          <li><a href="">Media</a></li>
+                          <li><a href="">What I've been upto</a></li>
                      </ul> 
-                  </div>
-         </div>
-             </div>
+                 </div>
+                 <div className="section-3">
+                     <div style={{
+                         textAlign:"right",
+                         margin:"2em"
+                     }}>
+                     Abdul Basit Syed
+                    <br/>
+                    International Ambassador, Croydon, U.K.
+                    <br/>
+                    Founder & Chairman of World Humanitarian Drive (WHD)
+                     </div>
+                     </div>     
+            </div>
+            </div>
         )
     }
    
