@@ -32,10 +32,9 @@ class PageImage extends Component {
            )
     }
     render() {
-        const {imgUrl} = this.state;
-        return (
-            <img src={imgUrl} width="100%"/>
-        )
+        const {imgUrl,isLoaded} = this.state;
+            return (<img className="page-image" src={imgUrl} width="90%"/>)
+       
     }
 }
 

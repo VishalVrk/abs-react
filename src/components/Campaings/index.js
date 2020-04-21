@@ -6,7 +6,7 @@ import CardListItem from '../utlis/CardListItem';
 class Campaings extends Component {
     render() {
       return(
-          <CardListItem data="campaings" heading="Campaings"/>
+          <CardListItem data="campaings" heading="Campaings" ButtonName="campaings"/>
       )
     }
     

@@ -31,11 +31,10 @@ class Navbar extends Component {
             <ul className={this.state.toggle ? "active" : "no-dispaly"}>
                <Link to='/'><li><FontAwesomeIcon icon={faHome}/></li></Link> 
                <Link to='/about'><li>About Me</li></Link> 
-               <Link to='/weekly_ds'><li>What I've been upto</li></Link>
+               <Link to='/events'><li>What I've been upto</li></Link>
                 <Link to='/campaings'><li>Campaigns</li></Link>
-                <li>Organisational Activites</li>
-                <li>Speeches</li>
-                <Link to='/in_media'><li>Media</li></Link>
+                <Link to='/speeches'></Link><li>Speeches</li>
+                <Link to='/in_media/26'><li>Media</li></Link>
             </ul>
         </nav>
             </Fragment>

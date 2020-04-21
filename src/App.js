@@ -6,7 +6,7 @@ import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 import AboutLayout from './components/About'
 import DataListingPage from './components/utlis/DataListingPage';
 import DataViewPage from './components/utlis/DataViewPage';
-
+import CommonViewPage from './components/utlis/CommonViewPage';
 
 class App extends Component{
   render(){
@@ -69,6 +69,49 @@ class App extends Component{
          data="campaings"
          />}/>
         <Route path="/about" component ={AboutLayout} />
+        <Route path="/in_media/:id" exact  render={(props) =>
+         <CommonViewPage {...props}
+         data="in_media"
+         />
+         }/>
+         <Route path="/speeches" exact>
+          <DataListingPage 
+          data="speeches"
+          heading="My Speeches in Parliment (My Voice)"
+          CardImage="https://user-images.githubusercontent.com/44617366/79054695-9fee7480-7c64-11ea-8ebf-14ac5d64db50.jpg"
+          CardContent="<p><blockquote>‘‘Not all of us can do great things. But we can do small things with great love.’’</blockquote>– Mother Teresa</p>"
+          />
+        </Route>
+        <Route path="/speeches/:id" exact  render={(props) =>
+         <DataViewPage {...props} 
+         data="speeches"
+         />}/>
+         <Route path="/plans" exact>
+          <DataListingPage 
+          data="plans"
+          heading="My Plans"
+          CardImage="https://user-images.githubusercontent.com/44617366/79054695-9fee7480-7c64-11ea-8ebf-14ac5d64db50.jpg"
+          CardContent="<p><blockquote>‘‘Not all of us can do great things. But we can do small things with great love.’’</blockquote>– Mother Teresa</p>"
+          />
+        </Route>
+        <Route path="/plans/:id" exact  render={(props) =>
+         <DataViewPage {...props} 
+         PageImage
+         data="plans"
+         />}/>
+          <Route path="/events" exact>
+          <DataListingPage 
+          data="events"
+          heading="Organizational Events"
+          CardImage="https://user-images.githubusercontent.com/44617366/79054695-9fee7480-7c64-11ea-8ebf-14ac5d64db50.jpg"
+          CardContent="<p><blockquote>‘‘Not all of us can do great things. But we can do small things with great love.’’</blockquote>– Mother Teresa</p>"
+          />
+        </Route>
+        <Route path="/events/:id" exact  render={(props) =>
+         <DataViewPage {...props} 
+         PageImage
+         data="events"
+         />}/>
         </Switch>
         <Footer/>
       </Router>

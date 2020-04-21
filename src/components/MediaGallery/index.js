@@ -60,7 +60,6 @@ class MediaGallery extends Component {
     render() {
         const {Images , index} = this.state;
         console.log(index)
-        // console.log(Images[index])
         return (
         <div className="main-content">
             <div className="img-container">
