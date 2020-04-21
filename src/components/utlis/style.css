@@ -68,6 +68,10 @@ content-wrapper> div{
     grid-gap: 1em;
 }
 
+.list-content p iframe{
+    display: none;
+}
+
 .page-image{
     margin: 2em;
 }

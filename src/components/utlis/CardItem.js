@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 import './style.css'
+import renderHTML from 'react-render-html';
 
 class CardItem extends Component {
     state={
@@ -47,7 +48,7 @@ class CardItem extends Component {
                             </div>
                         <div>
                         <strong>{title.rendered}</strong>
-                    <p dangerouslySetInnerHTML={{__html:`${content.rendered.slice(0,100)}...`}}></p>
+                        <p className="list-content">{renderHTML(`${content.rendered.slice(0,100)}...`)}</p>
                     <Link to={`/${this.props.name}/${id}`}>read more</Link>
                         </div> 
                         </div>
