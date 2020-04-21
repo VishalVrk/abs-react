@@ -34,16 +34,7 @@ class AboutLayout extends Component {
                     <div className="main-wrapper">
                     <div className="first-row">
                             <section className="my-weekly-ds-times">
-                                <SmallCard content="
- <h2>Awards</h2>                             
-<br/> <b>International Ambassador</b> - Croydon
-<br/> <b>“Mahtma Gandhi Award”</b> - NRI Welfare Society
-<br/> <b>“Knight of Malta”</b> -The Sovereign Order of OSJ Malta
-<br/> <b>“Ambassador for Peace”</b> - Universal Peace Federation
-<br/> <b>“Award of Excellence’’</b> - United Nations Office on Drugs and crime (UNODC) and Saudi Government
-<br/> <b>“Peace Award”</b> - BRICS International Alliance "
-
-/>
+                                <SmallCard content="<img width=100% src='https://user-images.githubusercontent.com/44617366/79865518-e8422b00-83f8-11ea-8fc2-852549dc8b52.png'/>"/>
                             <div className="subdivisions">
                             <SmallCard content="
  <h2>Designatory Roles</h2>                             
