@@ -8,6 +8,7 @@ import Facebook from '../utlis/Facebook'
 import Speeches from '../Speeches';
 import Plans from '../Plans';
 import Events from '../Events';
+import Scedhule from '../Scedhule';
 import Contact from '../Contact';
 
 
@@ -30,6 +31,7 @@ class HomeLayout extends Component {
                     <Speeches/>
                     </div>
                     <div>
+                        <Scedhule/>
                         <Contact/>
                     </div>
                 </div>
