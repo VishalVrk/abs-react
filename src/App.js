@@ -7,6 +7,7 @@ import AboutLayout from './components/About'
 import DataListingPage from './components/utlis/DataListingPage';
 import DataViewPage from './components/utlis/DataViewPage';
 import CommonViewPage from './components/utlis/CommonViewPage';
+import EventsDisplay from './components/utlis/EventsDisplay';
 
 class App extends Component{
   render(){
@@ -100,17 +101,15 @@ class App extends Component{
          data="plans"
          />}/>
           <Route path="/events" exact>
-          <DataListingPage 
-          data="events"
-          heading="Organizational Events"
-          CardImage="https://user-images.githubusercontent.com/44617366/79054695-9fee7480-7c64-11ea-8ebf-14ac5d64db50.jpg"
-          CardContent="<p><blockquote>‘‘Not all of us can do great things. But we can do small things with great love.’’</blockquote>– Mother Teresa</p>"
-          />
+         <EventsDisplay  data="events"
+         heading="Organizational Events"
+         />
         </Route>
         <Route path="/events/:id" exact  render={(props) =>
          <DataViewPage {...props} 
          PageImage
          data="events"
+         SocialMedia
          />}/>
         </Switch>
         <Footer/>

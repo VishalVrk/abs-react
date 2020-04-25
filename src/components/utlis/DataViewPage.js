@@ -7,6 +7,7 @@ import { faThumbsUp , faPhone } from '@fortawesome/free-solid-svg-icons'
 import PageImage from '../utlis/PageImage';
 import MediaGallery from '../MediaGallery';
 import renderHTML from 'react-render-html';
+import Contact from '../Contact';
 
 class DataViewPage extends Component {
     state={
@@ -39,6 +40,7 @@ class DataViewPage extends Component {
                         image={this.props.image}
                         content={this.props.content}
                         />:''}
+                        {this.props.SocialMedia ? <Contact/>:''}
                     </div>
 
                     <div className="secound-row">

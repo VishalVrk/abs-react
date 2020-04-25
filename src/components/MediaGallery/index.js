@@ -19,6 +19,8 @@ class MediaGallery extends Component {
         Images:[Img1,Img2,Img3,Img4,Img5,Img6,Img7,Img8],
     }
 
+ 
+
     onClickForward=()=>{
         if(this.state.index+1 === this.state.Images.length){
             this.setState({
@@ -55,6 +57,8 @@ class MediaGallery extends Component {
             index:index
         })
     }
+
+
     
 
     render() {

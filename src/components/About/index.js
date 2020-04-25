@@ -4,6 +4,7 @@ import About from './about'
 import {Route ,Link, withRouter,Switch} from 'react-router-dom'
 import axios from 'axios';
 import SmallCard from '../utlis/SmallCard'
+import Contact from '../Contact';
 
 
 
@@ -22,6 +23,20 @@ class AboutLayout extends Component {
                     isLoaded: true
                 }))
                 .catch(err=>console.log(err))
+
+                axios.get(`https://wp-api-beyondx.000webhostapp.com/wp-json/wp/v2/desginatory_roles`)
+                .then(res=> this.setState({
+                    designatory: res.data[0],
+                    isLoaded: true
+                }))
+                .catch(err=>console.log(err))
+
+                axios.get(`https://wp-api-beyondx.000webhostapp.com/wp-json/wp/v2/awards`)
+                .then(res=> this.setState({
+                    awards: res.data[0],
+                    isLoaded: true
+                }))
+                .catch(err=>console.log(err))
             }
 
     render(){
@@ -30,24 +45,17 @@ class AboutLayout extends Component {
         console.log(abouts);
         if(isLoaded){
             return (
-                <div className="container">
-                    <div className="main-wrapper">
+                <div className="about-container">
+                    <div className="about-wrapper">
                     <div className="first-row">
                             <section className="my-weekly-ds-times">
                                 <SmallCard content="<img width=100% src='https://user-images.githubusercontent.com/44617366/79865518-e8422b00-83f8-11ea-8fc2-852549dc8b52.png'/>"/>
                             <div className="subdivisions">
-                            <SmallCard content="
- <h2>Designatory Roles</h2>                             
- <br/><b>International Ambassador</b> – Croydon Borough of Greater London
- <br/><b>Founder & Chairman</b> – World Humanitarian Drive
- <br/><b>Board of Director</b> – Universal Peace Federation
- <br/><b>Director</b> – Platinum Consultant London Ltd
- <br/><b>Founder & Chairman</b> – Al Basit Real Estate
- <br/><b>Vice president</b> – Space Kidz India
- <br/><b>Vice President</b> – Amicability International Diplomatic Club
- <br/><b>Board Member</b>- Croydon Mayor's Charity Board
- <br/><b>Steering Committee Member</b> – Faiths Together in Croydon"
-/>
+                                <h1>Know More</h1>
+                                <ul>
+                                   <Link to={`${match.url}/desginatory-roles`}><li>Designatory Roles</li></Link> 
+                                <Link to={`${match.url}/awards`}><li>Awards and Honours</li></Link> 
+                                </ul>
                             </div>                                
                         </section>
                         </div>
@@ -56,7 +64,7 @@ class AboutLayout extends Component {
                             <div className="main-section">
                             <Switch>
                             <Route exact path="/about">
-                            <About data={abouts} loaded={isLoaded}/>
+                            <About data={abouts} loaded={isLoaded} Gallery/>
                             <div className="frame-video" style={{marginTop:"3em" , marginBottom:"10em"}}>
                                  <iframe width="90%" height="420px" src="https://www.youtube.com/embed/AT51NJOfxh4?autoplay=1" frameborder="0" allowfullscreen></iframe>
                              </div>
@@ -70,6 +78,14 @@ class AboutLayout extends Component {
                           </Switch>
                             </div>
                         </section>
+                        </div>
+                        <div className="third-row">
+                            <div style={{
+                                margin:"0px"
+                            }}>
+                            <Contact/>
+                            </div>
+                               
                         </div>
                     </div>
                 </div>

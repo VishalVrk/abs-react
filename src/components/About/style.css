@@ -1,27 +1,45 @@
-.campaings{
-    margin: 0;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    background: white; 
+.event-container{
+margin-left: 2.5em;
+margin-right: 2.5em;
+margin-top: 2.5em;
+
+}
+.about-container{
+    margin-top: 2rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 10em;
+}
+
+.events-card{
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.events-card h1{
+    background-color:#eee ;
+    padding: 0.5em;
+    color: #1565C0;
+}
+
+.events-card:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-div.campaings h1{
-    background-color: #1565C0; 
-    padding: 1em; margin: 0; 
-    color: white; 
-    font-weight: bold;
+.about-content p img{
+    width: 100%;
 }
 
-.content-wrapper{
+
+.about-wrapper{
     display: grid;
-    grid-template-columns: 30% auto;
-    grid-row-gap: 0.5em;
+    grid-template-columns: 20% 60% auto;
 }
 
-.content-wrapper> div{
-    background:#fff;
-    padding: 1em;
+.about-wrapper> div{
+    padding-left: 1em;
+    padding-right: 1em;
     font-size: small;
 }
 
