@@ -39,9 +39,9 @@ export default class DataListingPage extends Component {
               <div className="secound-row">
                     <section className="my-weekly-ds-times">
                         <div className="main-section">
-        <h1>{this.props.heading}</h1>
+        <h1 style={{backgroundColor: "#1565C0",padding: "1em",margin: "0",color: "white", fontWeight: "bold"}}>{this.props.heading}</h1>
                         {datas.length ?datas.map(data=>(
-                <CardItem key={data.id} data={data} name={this.props.data}/>
+                            <CardItem key={data.id} data={data} name={this.props.data}/>
                             )):'Loading'
                         }
                         </div>

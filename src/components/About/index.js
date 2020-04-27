@@ -51,7 +51,7 @@ class AboutLayout extends Component {
                             <section className="my-weekly-ds-times">
                                 <SmallCard content="<img width=100% src='https://user-images.githubusercontent.com/44617366/79865518-e8422b00-83f8-11ea-8fc2-852549dc8b52.png'/>"/>
                             <div className="subdivisions">
-                                <h1>Know More</h1>
+                                <h1 style={{backgroundColor: "#1565C0",padding: "0.5em",margin: "0",color: "white", fontWeight: "bold"}}>Know More</h1>
                                 <ul>
                                    <Link to={`${match.url}/desginatory-roles`}><li>Designatory Roles</li></Link> 
                                 <Link to={`${match.url}/awards`}><li>Awards and Honours</li></Link> 
@@ -59,7 +59,7 @@ class AboutLayout extends Component {
                             </div>                                
                         </section>
                         </div>
-                        <div className="secound-row">
+                        <div className="secound-row" style={{paddingLeft:"0",paddingRight:"0"}}>
                         <section className="my-weekly-ds-times">
                             <div className="main-section">
                             <Switch>

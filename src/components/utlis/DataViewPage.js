@@ -46,12 +46,7 @@ class DataViewPage extends Component {
                     <div className="secound-row">
                     <section className="my-weekly-ds-times">
                         <div className="main-section">
-                            <h1>{datas.title.rendered}</h1>
-							<div className="share-buttons">
-							<button><FontAwesomeIcon icon={faThumbsUp}/>like</button>
-                            <button>share</button>
-							<button><FontAwesomeIcon icon={faPhone}/>tweet</button>
-							</div>
+                            <h1 style={{backgroundColor: "#1565C0",padding: "1em",margin: "0",color: "white", fontWeight: "bold"}}>{datas.title.rendered}</h1>
 							<div>
                             {this.props.PageImage ?  <PageImage img={datas}/> : ''}
                             {this.props.PageGallery ?  <MediaGallery/> : ''}

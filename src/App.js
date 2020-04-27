@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomeLayout from './components/HomeLayout';
-import {HashRouter as Router, Route, Switch} from 'react-router-dom'
+import {HashRouter as Router, Route, Switch,withRouter} from 'react-router-dom'
 import AboutLayout from './components/About'
 import DataListingPage from './components/utlis/DataListingPage';
 import DataViewPage from './components/utlis/DataViewPage';
 import CommonViewPage from './components/utlis/CommonViewPage';
 import EventsDisplay from './components/utlis/EventsDisplay';
+import ScedhulePage from './components/Scedhule/ScedhulePage'
+import News from './components/News';
 
 class App extends Component{
   render(){
@@ -111,11 +113,17 @@ class App extends Component{
          data="events"
          SocialMedia
          />}/>
+           <Route path="/contact" exact  component={ScedhulePage}/>
+           <Route path='/news' exact  render={(props) => <News
+           {...props} data="media_links"
+           heading="In The Media"
+           />}/>
         </Switch>
         <Footer/>
       </Router>
     ) 
   }
 }
+
 
 export default App;

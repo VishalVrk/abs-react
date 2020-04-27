@@ -16,13 +16,8 @@ import './style.css'
             return (
                 <div>
                   <div>
-                     <h1>{renderHTML(props.data.title.rendered)}
+                     <h1 style={{backgroundColor: "#1565C0",padding: "0.5em",margin: "0",color: "white", fontWeight: "bold"}}>{renderHTML(props.data.title.rendered)}
                         </h1>
-                         {/* <div className="share-buttons">
-                             <button><FontAwesomeIcon icon={faThumbsUp}/>like</button>
-                                 <button>share</button>
-                                     <button><FontAwesomeIcon icon={faPhone}/>tweet</button>
-                         </div> */}
                          <div className="main">
                              {props.Image ?<PageImage img={props.data}/>: null}
                              {props.Gallery ? <MediaGallery/>: null}

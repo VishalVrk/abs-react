@@ -36,7 +36,7 @@ class CommonViewPage extends Component {
 
                     <div className="secound-row">
                         <div className="main-section">
-                            <h1>{datas.title.rendered}</h1>
+                            <h2 style={{backgroundColor: "#1565C0",padding: "1em",margin: "0",color: "white", fontWeight: "bold"}}>{datas.title.rendered}</h2>
 							{/* <div className="share-buttons">
 							<button><FontAwesomeIcon icon={faThumbsUp}/>like</button>
                             <button>share</button>

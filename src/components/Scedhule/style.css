@@ -168,6 +168,20 @@ button {
     font-weight: bold;
 }
 
+.content-section{
+	background-color: #fff;
+}
+
+.content{
+	overflow: hidden;
+}
+
+.meeting-wrapper{
+	display: grid;
+	grid-template-columns: auto 35%;
+	grid-gap: 1em;
+}
+
 
 @media only screen and (max-width: 700px){
     .wrap-input1 {
