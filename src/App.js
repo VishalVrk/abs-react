@@ -114,6 +114,7 @@ class App extends Component{
          SocialMedia
          />}/>
            <Route path="/contact" exact  component={ScedhulePage}/>
+           
            <Route path='/news' exact  render={(props) => <News
            {...props} data="media_links"
            heading="In The Media"

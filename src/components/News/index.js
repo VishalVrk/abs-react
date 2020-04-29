@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import Contact from '../Contact';
 import axios from 'axios';
 import renderHTML from 'react-render-html';
+import {Link} from 'react-router-dom'
 
 
-export default class News extends Component {
+class News extends Component {
 
     state={
         loading:false,
@@ -39,6 +40,15 @@ export default class News extends Component {
                 <div className="container">
                     <div className="main-wrapper">
                         <div className="first-row">
+                        <div className="subdivisions">
+                                <h3 style={{backgroundColor: "#1565C0",padding: "0.5em",margin: "0",color: "white", fontWeight: "bold"}}>Know More</h3>
+                                <ul>
+                                   <Link to={`/desginatory-roles`}><li>Designatory Roles</li></Link> 
+                                <Link to={`/awards`}><li>Awards and Honours</li></Link> 
+                                <Link to={`/awards`}><li>Awards and Honours</li></Link> 
+                                <Link to={`/awards`}><li>Awards and Honours</li></Link> 
+                                </ul>
+                            </div>   
                             <Contact/>
                         </div>
                         <div className="content-section">
@@ -60,3 +70,4 @@ export default class News extends Component {
         }
     }
 }
+export default News;

@@ -144,9 +144,9 @@ button {
 .subdivisions{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
-    height: 300px;
     margin-bottom: 2em;
     margin-top: 1em;
+    padding-bottom: 1em;
 }
 
 .subdivisions h1{
@@ -156,7 +156,6 @@ button {
 
 .subdivisions ul{
     padding: 0;
-    
 }
 
 .subdivisions li{

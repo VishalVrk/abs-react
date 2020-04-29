@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import CardItem from '../utlis/CardItem'
 import SmallCard from '../utlis/SmallCard'
-
+import Contact from '../Contact'
 export default class DataListingPage extends Component {
     state={
         loading:false,
@@ -34,7 +34,8 @@ export default class DataListingPage extends Component {
             <div className="container">
               <div className="main-wrapper">
                   <div>
-                    <SmallCard image={this.props.CardImage} content={this.props.CardContent}/>
+                    {this.props.ImageCard?<SmallCard image={this.props.CardImage} content={this.props.CardContent}/>:''}
+                    <Contact/>
                   </div>
               <div className="secound-row">
                     <section className="my-weekly-ds-times">
